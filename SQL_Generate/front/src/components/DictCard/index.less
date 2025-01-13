@@ -1,0 +1,66 @@
+.dict-info-card {
+  .ant-card {
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    
+    &:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 36px 0 rgba(31, 38, 135, 0.25);
+    }
+    
+    .ant-card-head {
+      border-bottom: 1px solid rgba(240, 240, 240, 0.8);
+      padding: 0 24px;
+      min-height: 60px;
+      
+      .ant-card-head-title {
+        font-size: 20px;
+        font-weight: 600;
+        color: #1a1a1a;
+        padding: 16px 0;
+      }
+    }
+    
+    .ant-card-body {
+      padding: 24px;
+      
+      .ant-input-search {
+        margin-bottom: 24px;
+        
+        .ant-input {
+          height: 40px;
+          border-radius: 8px 0 0 8px;
+          border: 1px solid rgba(0, 0, 0, 0.1);
+          
+          &:hover, &:focus {
+            border-color: #1890ff;
+            box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.1);
+          }
+        }
+        
+        .ant-btn {
+          height: 40px;
+          border-radius: 0 8px 8px 0;
+          border: none;
+          background: #1890ff;
+          
+          &:hover {
+            background: #40a9ff;
+          }
+        }
+      }
+    }
+  }
+  
+  .ant-empty {
+    padding: 48px 0;
+    
+    .ant-empty-description {
+      color: rgba(0, 0, 0, 0.45);
+    }
+  }
+}

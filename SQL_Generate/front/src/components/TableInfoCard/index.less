@@ -1,0 +1,110 @@
+.table-info {
+  padding: 24px;
+  background: linear-gradient(135deg, #f5f7fa 0%, #f7f9fc 100%);
+  min-height: 100vh;
+}
+
+.table-info-card {
+  .custom-card {
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    background: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.12);
+    }
+
+    .ant-card-head {
+      border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+      padding: 24px 32px;
+    }
+
+    .ant-card-body {
+      padding: 32px;
+    }
+  }
+
+  .card-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    .card-title {
+      font-size: 20px;
+      font-weight: 600;
+      background: linear-gradient(120deg, #2c3e50, #3498db);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .type-tag {
+      padding: 4px 12px;
+      border-radius: 20px;
+      font-weight: 500;
+      border: none;
+    }
+  }
+
+  .search-input {
+    .ant-input {
+      height: 48px;
+      border-radius: 24px 0 0 24px;
+      border: 1px solid rgba(0, 0, 0, 0.08);
+      padding: 0 24px;
+      font-size: 15px;
+      
+      &:focus {
+        box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.1);
+      }
+    }
+    
+    .ant-input-search-button {
+      height: 48px;
+      width: 60px;
+      border-radius: 0 24px 24px 0;
+      
+      .anticon {
+        font-size: 18px;
+      }
+    }
+  }
+
+  .login-prompt {
+    padding: 48px 0;
+    
+    .prompt-text {
+      color: #666;
+      font-size: 16px;
+      margin-bottom: 24px;
+    }
+
+    .ant-btn {
+      height: 48px;
+      padding: 0 32px;
+      border-radius: 24px;
+      font-size: 16px;
+      
+      .anticon {
+        font-size: 18px;
+      }
+    }
+  }
+
+  &.public {
+    .custom-card {
+      background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.95), rgba(240, 247, 255, 0.95));
+      border-top: 4px solid #1890ff;
+    }
+  }
+
+  &.private {
+    .custom-card {
+      background: linear-gradient(to bottom right, rgba(255, 255, 255, 0.95), rgba(240, 255, 244, 0.95));
+      border-top: 4px solid #52c41a;
+    }
+  }
+}

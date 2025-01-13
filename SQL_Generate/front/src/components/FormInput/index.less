@@ -1,0 +1,139 @@
+.form-input {
+  .basic-info-section {
+    background: #fafafa;
+    padding: 24px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+
+    .ant-form-item {
+      margin-bottom: 16px;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+
+    .ant-input-prefix {
+      color: #1890ff;
+      margin-right: 8px;
+    }
+
+    .mock-num-input {
+      width: 160px;
+    }
+  }
+
+  .ant-divider {
+    margin: 32px 0;
+    
+    .ant-divider-inner-text {
+      font-size: 16px;
+      font-weight: 500;
+    }
+  }
+
+  .fields-collapse {
+    background: #fff;
+    border-radius: 8px;
+    
+    .field-panel {
+      margin-bottom: 16px;
+      border: 1px solid #f0f0f0;
+      border-radius: 8px;
+      
+      &:last-child {
+        margin-bottom: 0;
+      }
+
+      .ant-collapse-header {
+        align-items: center !important;
+        flex-wrap: wrap !important;
+        padding: 16px;
+        background: #fafafa;
+        border-radius: 8px 8px 0 0;
+        
+        .ant-form-item {
+          margin-bottom: 0;
+        }
+      }
+
+      .field-toolbar {
+        .ant-btn {
+          padding: 4px 8px;
+          
+          &.move-btn {
+            color: #1890ff;
+          }
+          
+          &.save-btn {
+            color: #52c41a;
+          }
+          
+          &.delete-btn {
+            &:hover {
+              background: #ff4d4f;
+              color: #fff;
+            }
+          }
+        }
+      }
+
+      .field-content {
+        padding: 24px;
+        
+        .ant-space {
+          width: 100%;
+        }
+      }
+    }
+  }
+
+  .add-field-buttons {
+    margin: 24px 0;
+    
+    .ant-btn {
+      height: 40px;
+      transition: all 0.3s;
+      
+      &:hover {
+        transform: translateY(-2px);
+      }
+      
+      &.add-btn {
+        border-color: #1890ff;
+        color: #1890ff;
+      }
+      
+      &.import-btn {
+        border-color: #52c41a;
+        color: #52c41a;
+      }
+      
+      &.add-common-btn {
+        border-color: #722ed1;
+        color: #722ed1;
+      }
+    }
+  }
+
+  .form-actions {
+    text-align: center;
+    margin-top: 32px;
+    
+    .ant-btn {
+      min-width: 120px;
+      height: 40px;
+      
+      &.generate-btn {
+        width: 180px;
+        background: linear-gradient(to right, #1890ff, #722ed1);
+        border: none;
+        
+        &:hover {
+          opacity: 0.9;
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+}

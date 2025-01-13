@@ -1,0 +1,84 @@
+.field-info-card {
+  .custom-card {
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    background: linear-gradient(to bottom, #ffffff, #fafafa);
+
+    &:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12);
+    }
+
+    .ant-card-head {
+      border-bottom: 1px solid #f0f0f0;
+      padding: 16px 24px;
+      
+      .card-icon {
+        font-size: 20px;
+        color: #1890ff;
+      }
+    }
+
+    .ant-card-body {
+      padding: 24px;
+    }
+  }
+
+  // 搜索框样式优化
+  .search-input {
+    margin-bottom: 24px;
+
+    .ant-input {
+      height: 44px;
+      border-radius: 8px 0 0 8px;
+      border: 1px solid #e8e8e8;
+      transition: all 0.3s;
+      
+      &:hover, &:focus {
+        border-color: #40a9ff;
+        box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.1);
+      }
+    }
+    
+    .ant-input-search-button {
+      height: 44px;
+      border-radius: 0 8px 8px 0;
+      width: 100px;
+    }
+  }
+
+  .ant-empty {
+    padding: 48px 0;
+  }
+
+  // 不同类型卡片的样式
+  &.public {
+    .custom-card {
+      background: linear-gradient(to bottom, #ffffff, #f7f9fc);
+    }
+  }
+
+  &.private {
+    .custom-card {
+      background: linear-gradient(to bottom, #ffffff, #f8f5ff);
+    }
+  }
+}
+
+// 响应式调整
+@media screen and (max-width: 576px) {
+  .field-info-card {
+    .custom-card {
+      .ant-card-body {
+        padding: 16px;
+      }
+    }
+    
+    .search-input {
+      .ant-input-search-button {
+        width: 80px;
+      }
+    }
+  }
+}
